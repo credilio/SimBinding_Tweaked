@@ -30,8 +30,8 @@ flutter:
       android:
         package: com.momentapps.simnumber
         pluginClass: SimNumberPlugin
-      ios:
-        pluginClass: SimNumberPlugin
+      # ios:
+      #   pluginClass: SimNumberPlugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
