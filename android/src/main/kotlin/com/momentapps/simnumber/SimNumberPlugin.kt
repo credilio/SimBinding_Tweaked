@@ -36,14 +36,6 @@ class SimNumberPlugin: FlutterPlugin, ActivityAware, MethodCallHandler, PluginRe
   private var methodChannel: MethodChannel? = null
   private var permissionEventChannel: EventChannel? = null
 
-
-  companion object {
-    fun registerWith(registrar: PluginRegistry.Registrar) {
-      val instance = SimNumberPlugin()
-      instance.onAttachedToEngine(registrar.context(), registrar.messenger())
-    }
-  }
-
   override fun onAttachedToEngine(flutterPluginBinding: FlutterPluginBinding) {
     this.onAttachedToEngine(
       flutterPluginBinding.applicationContext,
